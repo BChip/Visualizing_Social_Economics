@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+
+	<title>Data Visualization - Social Economics</title>
+
+	<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+	<meta name="author" content="Hakim El Hattab">
+
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/black.css" id="theme">
+
+	<link rel="stylesheet" href="lib/css/zenburn.css">
+
+	<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
+
+	<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+</head>
+
+<body>
+
+	<div class="reveal">
+
+		<div class="slides">
+			<section data-background="#FF6600">
+				<h1>Visualizing Social Economics</h1>
+				<h3>Visualizing Cool Things!</h3>
+				<p>
+					<small>Created by <a href="http://bradleychippi.com">Bradley Chippi</a> / <a href="#">Jacob Wang</a> / <a href="#">...</a> / <a href="#">...</a></small>
+				</p>
+			</section>
+
+			<section data-background="#000000">
+				<section data-background="#000000">
+					<video autoplay loop muted>
+						<source src="video.webm" type="video/webm">
+					</video>
+				</section>
+				<section data-background="#000000">
+					<iframe src="http://threegraphs.com/charts/preview/2917/embed/" width="500" height="500" scrolling="no" frameborder="0" style="border:none;"></iframe>
+				</section>
+			</section>
+
+			<section data-background="#FF0000">
+				<section>
+					<h2>About The Tool</h2>
+					<p>The purpose of this project is to demostrate world-wide <em>social economics</em>. With the data we grabbed and the visualization we gave for the data, we can conclude a lot of neat data. For example, we found the top 5 highest birth/death ratio
+						countries. Another example we found is, the birth rate in China signically decreased after the 1970's. Lastly, our favorite visualization is the scatter plot of future population. The reason this data visualization is so cool is because the data
+						was found using Microsoft Azure using a Boosted Decision Tree Regression algorithm.</p>
+					<br>
+					<a href="#" class="navigate-down">
+						<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
+					</a>
+				</section>
+				<section>
+					<h2>More About The Tool</h2>
+					<p>In this tool we are using D3 (Data-Driven Documents) to show case our data visualizations on population, poverty, and crime.</p>
+				</section>
+				<section>
+					<h2>Even More...</h2>
+					<p><em>D3.js</em> is a JavaScript library for manipulating documents based on data. D3 helps you bring data to life using <em>HTML, SVG, and CSS</em>. D3’s emphasis on web standards gives you the full capabilities of <em>modern</em> browsers without
+						tying yourself to a proprietary framework, combining powerful visualization components and a data-driven approach to DOM manipulation.</p>
+					<br>
+					<a href="#/2">
+						<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="transform: rotate(180deg); -webkit-transform: rotate(180deg);">
+					</a>
+				</section>
+				<section>
+					<h2>Even Even More...</h2>
+					<p>Not only did we use D3.js, we also used <em>Three.js</em>. Using Three.js was a great framework because it delivered 3D graphs for our data. Three.js is a library that makes WebGL - 3D in the browser - easy to use. While a simple cube in raw WebGL would turn out hundreds of lines of Javascript and shader code, a Three.js equivalent is only a fraction of that.</p>
+				</section>
+			</section>
+
+			<section data-background="#ffff00">
+				<h2>Why?</h2>
+				<p>This project was inspired by <em>Wild Hacks 2015</em>. The project was also inspired by <em>Big Data</em>. Our goal for this project is to take real data and make it come to life to help <em>visualize</em> world-wide social economoics.
+				</p>
+			</section>
+
+			<section data-background="#d3d3d3">
+				<h2>Developers</h2>
+				<img style="border-radius: 50%; height: 200; width: 200px;" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAALhAAAAJGRhNGI1ZTc1LTgxY2EtNDIxNC1iOWI3LWVmZmIxZWFiNDU4NA.jpg" />
+				<h3>Bradley Chippi</h3>
+				<p><em>Front-End Development</em></p>
+				<h3></h3>
+			</section>
+
+
+
+		</div>
+
+	</div>
+
+	<script src="lib/js/head.min.js"></script>
+	<script src="js/reveal.js"></script>
+
+	<script>
+		Reveal.initialize({
+			controls: true,
+			progress: true,
+			history: true,
+			center: true,
+
+			transition: 'slide',
+
+			dependencies: [{
+				src: 'lib/js/classList.js',
+				condition: function() {
+					return !document.body.classList;
+				}
+			}, {
+				src: 'plugin/markdown/marked.js',
+				condition: function() {
+					return !!document.querySelector('[data-markdown]');
+				}
+			}, {
+				src: 'plugin/markdown/markdown.js',
+				condition: function() {
+					return !!document.querySelector('[data-markdown]');
+				}
+			}, {
+				src: 'plugin/highlight/highlight.js',
+				async: true,
+				callback: function() {
+					hljs.initHighlightingOnLoad();
+				}
+			}, {
+				src: 'plugin/zoom-js/zoom.js',
+				async: true
+			}, {
+				src: 'plugin/notes/notes.js',
+				async: true
+			}]
+		});
+	</script>
+
+</body>
+
+</html>
